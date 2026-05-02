@@ -1,3 +1,4 @@
+import styles from "./Sidebar.module.css"
 function Sidebar(){
     const links =[
         { icon: "fa-chart-column",title:"Status" },
@@ -8,7 +9,7 @@ function Sidebar(){
         { icon: "fa-message",title:"live Chats" }
     ];
     return(
-       <aside>
+       <aside className={`${styles.sidebar} min-vh-100 py-4`}>
         <div className="title">Dashboard</div>
         <nav>
             {links.map((item, index) => (
