@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-function Users({ setIsDirty }) {
+function Developers({ setIsDirty }) {
   return (
     <section className="py-4">
       <Outlet context={{ setIsDirty }} />
@@ -8,4 +8,4 @@ function Users({ setIsDirty }) {
   );
 }
 
-export default Users;
+export default Developers;
